@@ -72,9 +72,11 @@ pip3 install fastapi uvicorn
 
 • 🐍  In the pytonfile write following code:
 
-from fastapi import FastAPI 
 
-```shell 
+```shell
+
+from fastapi import FastAPI
+
 app = FastAPI()
 
 @app.get("/")
