@@ -74,6 +74,7 @@ pip3 install fastapi uvicorn
 
 from fastapi import FastAPI 
 
+```shell 
 app = FastAPI()
 
 @app.get("/")
@@ -83,20 +84,13 @@ async def root():
 @app.get("/welcome")
 async def root_results():
     return {"message": "Hello World This is Hannes 1 "}
-
-
-
-  
-
-
-
+```
 
 • ✅ Start FastAPI & 🚀 Uvicorn Server
 
  ```Shell
 
-uvicorn main:app --reload
+uvicorn main:app --reload ## main is your name of the 🐍 pythonfile 
   
 ```
 
-uvicorn main:app --reload
