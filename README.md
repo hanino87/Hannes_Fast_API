@@ -17,7 +17,6 @@ FastAPI is a modern, high-performance web framework for building APIs with Pytho
 
   pip --version
 
-  pip3 --version 
   
   ```
 
@@ -68,3 +67,36 @@ pip3 install fastapi uvicorn
 ```
 
 ## 🔹 2. Create your first simple endpoint and run FastAPI server 
+
+• 🐍 Create a Pythonfile 
+
+• 🐍  In the pytonfile write following code:
+
+from fastapi import FastAPI 
+
+app = FastAPI()
+
+@app.get("/")
+async def root():
+    return {"message": "Hello World This is my first FastApi"}
+
+@app.get("/welcome")
+async def root_results():
+    return {"message": "Hello World This is Hannes 1 "}
+
+
+
+  
+
+
+
+
+• ✅ Start FastAPI & 🚀 Uvicorn Server
+
+ ```Shell
+
+uvicorn main:app --reload
+  
+```
+
+uvicorn main:app --reload
