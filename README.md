@@ -81,11 +81,11 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World This is my first FastApi"}
+    return {"message": "Hello world this is my first FastApi"}
 
 @app.get("/welcome")
 async def root_results():
-    return {"message": "Hello World This is Hannes 1 "}
+    return {"message": "Hello world this is Hannes "}
 ```
 
 • ✅ Start FastAPI & 🚀 Uvicorn Server
